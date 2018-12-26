@@ -1,6 +1,55 @@
+$color-black: #000;
+$color-white: #FFF;
 $color-dimond-red: #DA3030;
+$color-jade: #16A085;
+$color-dark-gray: #757575;
+$color-navy-blue: #2C3E50;
+$color-navy-gray: #5D6D7E;
 
+body, div{
+  margin: 0;
+  display: block;
+}
 h1{
   font-size: 30px;
-  color: $color-dimond-red;
+  color: $color-navy-gray;
+}
+.header-fixed{
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  background: $color-navy-blue;
+  .social-container{
+    width: 100%;
+    height: 25px;
+    background: $color-navy-gray;
+    ul.social-icons{
+      margin: 0;
+    list-style-type: none;
+      li{
+        width: 30px;
+        float: right;
+      }
+    }
+  }
+}
+.logo{
+  height: 95px;
+  width: 200px;
+  img{
+    height: 80px;
+    width: auto;
+  }
+}
+.center-Xposition{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.center-position{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
